@@ -48,9 +48,9 @@ $tf/*
 x64/
 x86/
 #build/
-bld/
-[Bb]in/
-[Oo]bj/
+/bld/
+/[Bb]in/
+/[Oo]bj/
 .vs/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -128,7 +128,7 @@ AppPackages/
 *.[Cc]ache
 ClientBin/
 [Ss]tyle[Cc]op.*
-*~
+/*~
 *.dbmdl
 *.jfm 
 *.dbproj.schemaview
