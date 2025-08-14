@@ -24,9 +24,11 @@ namespace nilnul.dev.src.div_
 	///		crop
 	///		artifact
 	///		mandatable
+	///		cognable
 	/// 
 	public interface IWordsable
 		//:
+		//IDelvable
 		//fs._address._route.division_.div_.
 	{
 	}

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using nilnul.fs.folder.be;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,31 +22,29 @@ namespace nilnul.fs.folders_._unjoint.item.div_.delvable
 		)
 		{
 
-			var dirs = nilnul.fs.folder.dirs_.notDotLed_.deV_._ExcludeAutogenX.Dirs_ofAddress(folder);
-
-			foreach (var dir in dirs)
+			switch (nilnul.fs.folder.categorize_.git_.PlainWorkRepo.Category_ofAddress(folder))
 			{
-				var dirAddress = System.IO.Path.Combine(folder, dir.ToString());
+				case fs.folder.categorize_.git_._plainWorkRepo.Ret.Plain:
+					///might be a bad module due to, say, nuls at the end of the config file.
 
-				foreach (
-					var item
-					in
-					new dir_.noDotLed_.noAutogen.InsideModules(io).addresses_ofAddress(
-						dirAddress
-					)
-				)
-				{
-					yield return item;
-				}
+					return new delvable_.giT_.plain.InsideModules(io).addresses_ofAddress(folder);
+					break;
+				case fs.folder.categorize_.git_._plainWorkRepo.Ret.Work:
+					return new delvable_.giT_.work.InsideModules(io).addresses_ofAddress(folder);
 
-			}
+					break;
+				case fs.folder.categorize_.git_._plainWorkRepo.Ret.Repo: //it has to be a bare repo
+					return Enumerable.Empty<string>();
+					break;
+				default:
 
-			if (new System.IO.DirectoryInfo(folder).EnumerateDirectories().Any(
-				d => d.Name.ToLower() == ".git"
-				)
-			)
-			{
-				yield return folder;
+					Trace.TraceError($"{folder} shall be work or repo or plain; unexpected exception when trichnomy;");
+					return Enumerable.Empty<string>();
+
+					//throw new UnexpectedReachException(
+					//	$"{folder} is not in any of the git category;"
+					//);
+					//break;
 			}
 
 

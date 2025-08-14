@@ -5,6 +5,7 @@
 	/// </summary>
 	/// alias:
 	///		dwelt
+	///		depo
 	///		crop
 	///			nonempty, considered.
 	public interface IDwelt

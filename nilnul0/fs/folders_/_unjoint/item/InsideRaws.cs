@@ -24,7 +24,7 @@ namespace nilnul.fs.folders_._unjoint.item
 
 	
 
-			return new item.div_.delvable.InsideRaws(io).addresses_ofAddress(folder);
+			return new item.div_.delvable.InsideRaws_byGit(io).addresses_ofAddress(folder);
 	
 		}
 	}

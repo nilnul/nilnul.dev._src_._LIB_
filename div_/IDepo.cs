@@ -13,5 +13,10 @@
 	///		depo
 	///			where data can be ported/stationed/dispatched.
 	///		
-	public interface IDepo:IDelvable,wordsable_.IDwelt { }
+	public interface IDepo
+		:
+		IDelvable
+		,
+		wordsable_.IDwelt
+	{ }
 }

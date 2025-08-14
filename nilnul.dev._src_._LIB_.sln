@@ -1,29 +1,101 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32510.428
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul.dev._src_._LIB_", "nilnul.dev._src_._LIB_.csproj", "{30548500-6BBD-4074-BEC7-D9C132786F5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "see", "see", "{CD576222-4C86-4E99-BB89-35C49AD22E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul._dev_._LIB_", "..\..\nilnul._dev_\_LIB_(Git\nilnul._dev_._LIB_.csproj", "{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul._dev_._TEST_", "..\..\nilnul._dev_\_TEST_(Git\nilnul._dev_._TEST_.csproj", "{242028A2-723C-47D3-BA9E-AB84B646D608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_TEST_(Git", "..\_TEST_(Git\_TEST_(Git.csproj", "{5B98427D-4097-4DE8-8D95-C83697D330CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Dev2nuget|Any CPU = Dev2nuget|Any CPU
 		Nuget|Any CPU = Nuget|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Release4Test|Any CPU = Release4Test|Any CPU
+		Sym2nuget|Any CPU = Sym2nuget|Any CPU
 		Symbol|Any CPU = Symbol|Any CPU
+		Symbols4Debug|Any CPU = Symbols4Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Dev2nuget|Any CPU.ActiveCfg = Dev2nuget|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Dev2nuget|Any CPU.Build.0 = Dev2nuget|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Release4Test|Any CPU.ActiveCfg = Release|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Release4Test|Any CPU.Build.0 = Release|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Sym2nuget|Any CPU.ActiveCfg = Sym2nuget|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Sym2nuget|Any CPU.Build.0 = Sym2nuget|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Symbol|Any CPU.ActiveCfg = Symbol|Any CPU
 		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Symbol|Any CPU.Build.0 = Symbol|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Symbols4Debug|Any CPU.ActiveCfg = Sym2nuget|Any CPU
+		{30548500-6BBD-4074-BEC7-D9C132786F5E}.Symbols4Debug|Any CPU.Build.0 = Sym2nuget|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Dev2nuget|Any CPU.ActiveCfg = Debug|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Dev2nuget|Any CPU.Build.0 = Debug|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Release4Test|Any CPU.ActiveCfg = Release4Test|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Release4Test|Any CPU.Build.0 = Release4Test|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Sym2nuget|Any CPU.ActiveCfg = Sym2nuget|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Sym2nuget|Any CPU.Build.0 = Sym2nuget|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Symbol|Any CPU.ActiveCfg = Symbol|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Symbol|Any CPU.Build.0 = Symbol|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Symbols4Debug|Any CPU.ActiveCfg = Symbols4Debug|Any CPU
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91}.Symbols4Debug|Any CPU.Build.0 = Symbols4Debug|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Dev2nuget|Any CPU.ActiveCfg = Dev2nuget|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Dev2nuget|Any CPU.Build.0 = Dev2nuget|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Nuget|Any CPU.ActiveCfg = Debug|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Nuget|Any CPU.Build.0 = Debug|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Release4Test|Any CPU.ActiveCfg = Release|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Release4Test|Any CPU.Build.0 = Release|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Sym2nuget|Any CPU.ActiveCfg = Sym2nuget|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Sym2nuget|Any CPU.Build.0 = Sym2nuget|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Symbol|Any CPU.ActiveCfg = Symbol|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Symbol|Any CPU.Build.0 = Symbol|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Symbols4Debug|Any CPU.ActiveCfg = Sym2nuget|Any CPU
+		{242028A2-723C-47D3-BA9E-AB84B646D608}.Symbols4Debug|Any CPU.Build.0 = Sym2nuget|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Dev2nuget|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Dev2nuget|Any CPU.Build.0 = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Nuget|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Nuget|Any CPU.Build.0 = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Release4Test|Any CPU.ActiveCfg = Release|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Release4Test|Any CPU.Build.0 = Release|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Sym2nuget|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Sym2nuget|Any CPU.Build.0 = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Symbol|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Symbol|Any CPU.Build.0 = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Symbols4Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98427D-4097-4DE8-8D95-C83697D330CA}.Symbols4Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94988FFF-EBE6-4EA9-B9AC-AFC9DF1D4B91} = {CD576222-4C86-4E99-BB89-35C49AD22E19}
+		{242028A2-723C-47D3-BA9E-AB84B646D608} = {CD576222-4C86-4E99-BB89-35C49AD22E19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE324BB6-9013-41B2-AC15-409063E864DA}

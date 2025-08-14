@@ -22,10 +22,10 @@ namespace nilnul.fs.folders_._unjoint.item
 		)
 		{
 
-			if (nilnul.fs.folder.be_.git_.Repo.Singleton.Be_ofAddress(folder) )
-			{
-				return new string[0];
-			}
+			//if (nilnul.fs.folder.be_.git_.Repo.Singleton.Be_ofAddress(folder) )
+			//{
+			//	return new string[0];
+			//}
 
 			return new item.div_.delvable.InsideModules(io).addresses_ofAddress(folder);
 	

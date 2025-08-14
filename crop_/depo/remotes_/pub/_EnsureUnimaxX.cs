@@ -4,25 +4,28 @@ using System.Numerics;
 
 namespace nilnul.dev.src.crop_.depo.remotes_.pub
 {
+	/// <summary>
+	/// for each nub:<see cref="nilnul.txt_._vered.INub"/>, ensure that the latest vered is unique;
+	/// </summary>
 	static public class _EnsureUnimaxX
 	{
 		/// <summary>
 		/// 
 		/// </summary>
 		/// <param name="module"></param>
-		/// <param name="pubBranchesArr">
+		/// <param name="branches4pub">
 		/// can be a hint  to later push
 		/// </param>
 		static public void _Vod_assumeModuleAddress(
 			string module
 			,
-			string[] pubBranchesArr
+			string[] branches4pub
 		)
 		{
 
 			
 			//pubBranchesArr = pubBranches.ToArray();
-			var bePub = nilnul.fs.git.module.be_.deV_.raW_.NilnulPub._Be_ofBranches(pubBranchesArr);
+			var bePub = nilnul.fs.git.module.be_.deV_.raW_.NilnulPub._Be_ofBranches(branches4pub);
 
 			if (!bePub)
 			{
@@ -45,11 +48,11 @@ namespace nilnul.dev.src.crop_.depo.remotes_.pub
 					}
 					return false;
 				}
-			);
+			).ToArray();
 
 			var remoteAsIdentyEs = currentRemotes.Select(
 				x => x.Select(y => nilnul.txt_.Vered3.Parse(y))
-			);  //eg: pub1-github3
+			).ToArray();  //eg: pub1-github3
 
 			foreach (var client in nilnul.fs.git.Properties.SettingsX.clients_pub_dict)
 			{
@@ -67,7 +70,7 @@ namespace nilnul.dev.src.crop_.depo.remotes_.pub
 
 				var remotes4ThisSvr = remoteAsIdentyEs.Where(
 					i => i.Skip(1).FirstOrDefault()?.nom == clientKeyNormed
-				);
+				).ToArray();
 
 				var maxes = nilnul.rel_.net_.poset.nodes_._MaximalX._Maximal_funcAssumeGt(
 					remotes4ThisSvr
@@ -78,7 +81,7 @@ namespace nilnul.dev.src.crop_.depo.remotes_.pub
 						var v2 = r2.ElementAt(1).ver;
 						return v1.main.en.CompareTo(v2.main.en) > 0;
 					}
-				);
+				).ToArray();
 
 				if (maxes.Count() == 1)
 				{

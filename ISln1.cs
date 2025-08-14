@@ -12,14 +12,25 @@ namespace nilnul.dev.src
 	///		abc
 	///		abc.def
 	///		(abc)\def.gh
+	///		(abc)\def.gh\asfa
+	///		
 	///	the words_.started can be retrieved with no exception.
 	/// </summary>
 	/// <remarks>
 	/// vs:<see cref="ICrop"/>, which can be, say, abc/def,which is not a sln.
+	/// This is used in nilnul.dev.bak as a unit in concurency. So slns shall not cross with each other.
 	/// </remarks>
 	/// alias:
 	///		sln has been taken by <see cref="nilnul.dev.src.ISln"/> in prj:<see cref="nilnul.DevI"/>; We need to inherit some type in this prj, so we need to recreate the type here. To append a ver:1 here to avoid name conflicting.
 	class ISln1:src.crop_.ISln
+		,
+		src.div_.IDepo
+		,
+		src.div_.IDelvable
+		,
+		nilnul.dev.src.ISln
 	{
 	}
+
+
 }

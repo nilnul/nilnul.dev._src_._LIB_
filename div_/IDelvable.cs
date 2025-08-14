@@ -9,6 +9,7 @@ namespace nilnul.dev.src.div_
 {
 
 	/// <summary>
+	/// 
 	/// each dir is <see cref="listable"/> as well as <see cref="notDotLed"/>
 	/// also except last dir, each dir is nonneglected by the cfg within that dir; last dir's cfg would be checked later outer of this scope.
 	/// 
@@ -16,11 +17,13 @@ namespace nilnul.dev.src.div_
 	/// 
 	/// </summary>
 	/// <remarks>
+	/// if the folder is not wordsable, each division of it cannot be module;
 	/// note: for the folder where this div is parented, the folder itself is not checked whether it's listable or dotLed or autogenerted or neglected.
 	///note:
 	///		abc\asdfa-dad\asdfa
 	///			is not delvable, but still work by gitRepo. it's just unable to be a repo module root.
 	/// </remarks>
+	/// vs: <see cref="IWordsable"/>, this is not unlisted by parent; for example: (packages) might be unlisted by its parent;
 	/// alias:
 	///		delvable
 	///			similar to dev.
@@ -30,7 +33,7 @@ namespace nilnul.dev.src.div_
 	///		work
 
 	public interface IDelvable
-		//:IWordsable
+		:IWordsable
 	{
 	}
 }

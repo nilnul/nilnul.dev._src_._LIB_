@@ -47,7 +47,7 @@ $tf/*
 [Rr]eleases/
 x64/
 x86/
-build/
+#build/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -231,3 +231,20 @@ healthchecksdb
 MigrationBackup/
 
 **/.*/
+
+**/*.out(![Gg]it)*
+**/*(!git/
+**/![Gg]it)*/
+**/*([Gg]it)*/
+**/[Gg]it)*/
+.*/
+*.skb
+
+*(![Gg]it)*
+*).git/
+*(.git/
+*(!git/
+*([Gg]it/
+
+.*
+!.gitignore
